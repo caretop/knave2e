@@ -144,7 +144,7 @@ export class Knave2eActorSheet extends ActorSheet {
     // Add Inventory Item
     html.find('.item-create').click(ev => {
 
-      let creatableItems = ['item', 'weapon', 'spell', 'armor', 'injury', 'storage'];
+      let creatableItems = ['item', 'weapon', 'spell', 'armor', 'injury'];
       let selectList = "";
 
       creatableItems.forEach(type => selectList += "<option value='" + type + "'>" + type + "</option>")
