@@ -45,6 +45,7 @@ Hooks.once('init', async function () {
     types: ['character'],
     makeDefault: true
   });
+  /*
   Actors.registerSheet("knave2e", Knave2eHirelingSheet, {
     types: ['hireling'],
     makeDefault: false
@@ -56,7 +57,7 @@ Hooks.once('init', async function () {
   Actors.registerSheet("knave2e", Knave2eStorageSheet, {
     types: ['storage'],
     makeDefault: false
-  });
+  });*/
 
   Items.unregisterSheet("core", ItemSheet);
   Items.registerSheet("knave2e", Knave2eItemSheet, { makeDefault: true });
