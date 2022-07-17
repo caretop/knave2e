@@ -1,0 +1,52 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header-kanve2e">
+        <img class="item-img" src="{{img}}" data-edit="img" title="{{name}}" />
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{name}}" placeholder="Name" class="item-text item-sheet-header"/></h1>
+
+            <div class="grid grid-3col">
+                <div class="resource">
+                    <label class="resource-label">{{localize "Knave2e.ItemWorth"}}</label>
+                    <input type="text" name="data.cost" value="{{data.cost}}" data-dtype="Number" class="item-text"/>
+                </div>
+                <div class="resource">
+                    <label class="resource-label">{{localize "Knave2e.ItemCurrentUsage"}}</label>
+                    <input type="text" name="data.pips.value" value="{{data.pips.value}}" data-dtype="Number" class="item-text"/>
+                </div>
+                <div class="resource">
+                    <label class="resource-label">{{localize "Knave2e.ItemMaxUsage"}}</label>
+                    <input type="text" name="data.pips.max" value="{{data.pips.max}}" data-dtype="Number" class="item-text"/>
+                </div>
+                <div class="resource">
+                    <label class="resource-label">{{localize "Knave2e.ItemTag"}}</label>
+                    <input type="text" name="data.tag" value="{{data.tag}}" data-dtype="String" class="item-text"/>
+                </div>
+                
+                <div class="resource">
+                    <label class="resource-label">{{localize "Knave2e.ItemWeight"}}</label>
+                    <input type="text" name="data.size.weight" value="{{data.size.weight}}" data-dtype="Number" class="item-text"/>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="description">{{localize "Knave2e.ItemDescription"}}</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Description Tab --}}
+        <div class="tab" data-group="primary" data-tab="description">
+            {{editor content=data.description target="data.description" button=true owner=owner editable=true}}
+        </div>
+
+        {{!-- Attributes Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+            {{!-- As you add new fields, add them in here! --}}
+        </div>
+    </section>
+</form>

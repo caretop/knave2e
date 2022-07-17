@@ -1,0 +1,262 @@
+{
+  "Actor": {
+    "types": [
+      "character",
+      "hireling",
+      "creature",
+      "storage"
+    ],
+    "templates": {
+      "base": {
+        "health": {
+          "value": 0,
+          "min": 0,
+          "max": 0
+        },
+        "hits": {
+          "value": 2,
+          "max": 2
+        },
+        "armor": 0
+      }
+    },
+    "character": {
+      "templates": [
+        "base"
+      ],
+      "biography": "",
+      "notes": "",
+      "description": {
+        "carrer": "Description",
+        "misfortune": "",
+        "physical": "",
+        "persoanlity": ""
+      },
+      "level": {
+        "value": 1,
+        "xp": 0
+      },
+      "coins": {
+        "value": 0
+      },
+      "grit": {
+        "value": 0,
+        "ignored": ""
+      },
+      "stats": {
+        "strength": {
+          "value": 0,
+          "label": "Strength",
+          "max": 0
+        },
+        "dexterity": {
+          "value": 0,
+          "label": "Dexterity",
+          "max": 0
+        },
+        "constitution": {
+          "value": 0,
+          "label": "Constitution",
+          "max": 0
+        },
+        "intelligence": {
+          "value": 0,
+          "label": "Intelligence",
+          "max": 0
+        },
+        "wisdom": {
+          "value": 0,
+          "label": "Wisdom",
+          "max": 0
+        },
+        "charisma": {
+          "value": 0,
+          "label": "Charisma",
+          "max": 0
+        },
+        "ap": {
+          "value": 0,
+          "label": "Ap",
+          "max": 0
+        }
+      },
+      "other": {
+        "grit": {
+          "value": 0
+        }
+      }
+    },
+    "hireling": {
+      "templates": [
+        "base"
+      ],
+      "biography": "",
+      "notes": "",
+      "description": {
+        "disposition": ""
+      },
+      "stats": {
+        "strength": {
+          "value": 0,
+          "label": "Strength",
+          "max": 0
+        },
+        "dexterity": {
+          "value": 0,
+          "label": "Dexterity",
+          "max": 0
+        },
+        "wisdom": {
+          "value": 0,
+          "label": "Wisdom",
+          "max": 0
+        }
+      }
+    },
+    "creature": {
+      "templates": [
+        "base"
+      ],
+      "biography": "",
+      "notes": "",
+      "description": {
+        "disposition": ""
+      },
+      "stats": {
+        "strength": {
+          "value": 0,
+          "label": "Strength",
+          "max": 0
+        },
+        "dexterity": {
+          "value": 0,
+          "label": "Dexterity",
+          "max": 0
+        },
+        "wisdom": {
+          "value": 0,
+          "label": "Wisdom",
+          "max": 0
+        }
+      }
+    },
+    "storage": {
+      "templates": [
+        "base"
+      ],
+      "biography": "",
+      "notes": "",
+      "description": {
+        "disposition": ""
+      },
+      "size" : {
+        "width" : 3,
+        "height" : 2
+      },
+      "storeDiv":""
+    }
+  },
+  "Item": {
+    "types": [
+      "item",
+      "weapon",
+      "armor",
+      "storage",
+      "injury",
+      "spell"
+    ],
+    "templates": {
+      "base": {
+        "description": "",
+        "sheet": {
+          "active": false,
+          "currentX": 0,
+          "currentY": 0,
+          "initialX": 0,
+          "initialY": 0,
+          "xOffset": 0,
+          "yOffset": 0,
+          "rotation" : 0,
+          "curWidth" : 1,
+          "curHeight" : 1,
+          "zIndex" : 1
+        },
+        "pips": {
+          "value": 0,
+          "max": 0,
+          "html": ""
+        },
+        "size": {
+          "width": 1,
+          "weight": 1,
+          "x": "17em",
+          "y": "2em",
+          "aspect" : 1
+        }
+      }
+    },
+    "item": {
+      "templates": [
+        "base"
+      ],
+      "weight": 0,
+      "cost": 0,
+      "tag": "",
+      "placement": "hand"
+    },
+    "storage": {
+      "templates": [
+        "base"
+      ],
+      "weight": 0,
+      "cost": 0,
+      "store": {
+        "value": "0",
+        "max": 25
+      },
+      "tag": ""
+    },
+    "weapon": {
+      "templates": [
+        "base"
+      ],
+      "weight": 0,
+      "cost": 0,
+      "tag": "",
+      "placement": "hand",
+      "weapon": {
+        "dmg1": "d6",
+        "dmg2": "",
+        "selected": 0,
+        "canSwap": false
+      }
+    },
+    "armor": {
+      "templates": [
+        "base"
+      ],
+      "weight": 0,
+      "cost": 0,
+      "tag": "",
+      "armor": {
+        "value": 1
+      }
+    },
+    "injury": {
+      "templates": [
+        "base"
+      ],
+      "clear": "",
+      "desc": ""
+    },
+    "spell": {
+      "templates": [
+        "base"
+      ],
+      
+      "tag": "",
+      "level": 1,
+      "isSpell" : true
+    }
+  }
+}

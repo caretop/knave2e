@@ -1,0 +1,97 @@
+{
+  "name": "knave2e",
+  "title": "Knave2e",
+  "description": "The unofficial Knave2e system for FoundryVTT.",
+  "version": "0.1.0",
+  "minimumCoreVersion": "0.8.6",
+  "compatibleCoreVersion": "V9",
+  "templateVersion": 2,
+  "author": "CarlJang",
+  "esmodules": [
+    "module/knave2e.js"
+  ],
+  "styles": [
+    "css/knave2e.css"
+  ],
+  "scripts": [],
+  "packs": [
+    {
+      "name": "weapons",
+      "label": "Weapons",
+      "system": "knave2e",
+      "path": "packs/weapons.db",
+      "entity": "Item"
+    },
+    {
+      "name": "armor",
+      "label": "Armor",
+      "system": "knave2e",
+      "path": "packs/armor.db",
+      "entity": "Item"
+    },
+    {
+      "name": "gear",
+      "label": "Gear",
+      "system": "knave2e",
+      "path": "packs/gear.db",
+      "entity": "Item"
+    },
+    {
+      "name": "injuries",
+      "label": "Injuries",
+      "system": "knave2e",
+      "path": "packs/injuries.db",
+      "entity": "Item"
+    },
+    {
+      "name": "spells",
+      "label": "Spells",
+      "system": "knave2e",
+      "path": "packs/spells.db",
+      "entity": "Item"
+    },
+    {
+      "name": "creatures",
+      "label": "Creatures",
+      "system": "knave2e",
+      "path": "packs/creatures.db",
+      "entity": "Actor"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    },
+    {
+      "lang": "es",
+      "name": "Español (Spanish)",
+      "path": "lang/es.json"
+    },
+    {
+      "lang": "ko",
+      "name": "Korean",
+      "path": "lang/ko.json"
+    }
+
+  ],
+  "gridDistance": 1,
+  "gridUnits": "in",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "",
+  "url": "https://github.com/Futil/foundry-knave2e",
+  "manifest": "https://raw.githubusercontent.com/Futil/foundry-knave2e/main/system.json",
+  "download": "https://github.com/Futil/foundry-knave2e/archive/main.zip",
+  "license": "LICENSE.txt"
+}
