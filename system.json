@@ -90,8 +90,8 @@
   "gridUnits": "in",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "",
-  "url": "https://github.com/Futil/foundry-knave2e",
-  "manifest": "https://raw.githubusercontent.com/Futil/foundry-knave2e/main/system.json",
-  "download": "https://github.com/Futil/foundry-knave2e/archive/main.zip",
+  "url": "https://github.com/caretop/knave2e",
+  "manifest": "https://raw.githubusercontent.com/caretop/knave2e/main/system.json",
+  "download": "https://github.com/caretop/knave2e/archive/main.zip",
   "license": "LICENSE.txt"
 }
