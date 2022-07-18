@@ -411,7 +411,7 @@ export class Knave2eActor extends Actor {
       attributeName = attribute.charAt(0)?.toUpperCase() + attribute.toLowerCase().slice(1);
 
     // Roll
-    let diceformular = "1d20";
+    let diceformular = "1d20+" + attribute.value;
 
 
     let r = new Roll(diceformular, {});
