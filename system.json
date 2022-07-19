@@ -2,7 +2,7 @@
   "name": "knave2e",
   "title": "Knave2e",
   "description": "The unofficial Knave2e system for FoundryVTT.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "V9",
   "templateVersion": 2,
