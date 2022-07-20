@@ -57,7 +57,7 @@
     "Knave2e.ItemTag" : "Tag",
     "Knave2e.ItemArmor" : "Armor",
     "Knave2e.ItemWidth" : "Width",
-    "Knave2e.ItemWeight" : "Weight",
+    "Knave2e.ItemWeight" : "Slots",
     "Knave2e.ItemClear" : "Clear",
     "Knave2e.ItemLevel" : "Level",
     "Knave2e.ItemDescription" : "Description",
