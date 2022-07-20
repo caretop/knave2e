@@ -69,9 +69,9 @@ export class Knave2eActor extends Actor {
   }
 
   rollStat(attribute) {
-    console.log(attribute)
+   
     let attLabel = attribute.label?.charAt(0).toUpperCase() + attribute.label?.toLowerCase().slice(1);
-    console.log(attLabel)
+   
     if (!attribute.label && isNaN(attLabel))
       attLabel = attribute.charAt(0)?.toUpperCase() + attribute.toLowerCase().slice(1);
 
@@ -235,10 +235,6 @@ export class Knave2eActor extends Actor {
   }
 
   rollSpell(item = "", power = ""){
-
-    console.log(item)
-    console.log(item.data)
-
     let die = power+"d6";
 
     let damageRoll = new Roll(die);
@@ -344,16 +340,14 @@ export class Knave2eActor extends Actor {
     const diceData = this.formatDice(r);
 
     let targetValue = slotNum 
-    console.log(diceData)
-
 
     let resultText = "";
 
     if (rollOver == true) {
       resultText = (targetValue <= r.total ? game.i18n.localize('Knave2e.RollSuccess') : game.i18n.localize('Knave2e.RollFailure'));
-  } else {
-      resultText = (targetValue <= r.total ? game.i18n.localize('Knave2e.RollSuccess') : game.i18n.localize('Knave2e.RollFailure'));
-  }
+    } else {
+        resultText = (targetValue <= r.total ? game.i18n.localize('Knave2e.RollSuccess') : game.i18n.localize('Knave2e.RollFailure'));
+    }
 
     var templateData = {
       actor: this,
@@ -434,7 +428,7 @@ export class Knave2eActor extends Actor {
     const diceData = this.formatDice(r);
 
     let mod = 0;
-    if (attribute.mod > 0) mod = attribute.mod;
+    if (attribute.value > 0) mod = attribute.value;
 
     //let targetValue = attribute.value + mod + (item == "" ? 0 : item.data.bonus);
 
@@ -446,6 +440,9 @@ export class Knave2eActor extends Actor {
     } else {
         resultText = (game.i18n.localize('Knave2e.RollResult'));
     }
+
+    let rawRoll = (r._total - mod) + "+" + mod
+    
 
     var templateData = {
       actor: this,
@@ -464,6 +461,9 @@ export class Knave2eActor extends Actor {
         },
         isCreature: {
           value: this.data.type == "hireling" ? true : false
+        },
+        rawRoll: {
+          value: rawRoll
         }
       },
       target: attribute.value,

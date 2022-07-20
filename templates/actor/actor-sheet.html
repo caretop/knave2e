@@ -66,6 +66,25 @@
 
         <img class="portrait" src="{{img}}" data-edit="img" title="{{name}}" height="250" width="250"/>
 
+        <div class="verticalFlex">
+          <div class="statblock" style="height: 7px;">
+            <div style="width:33%;"></div>
+          </div>
+        </div>
+        <div class="verticalFlex blockborder">
+          <!-- slot -->
+          <div class="statblock">
+            <label for="data.slots" class="statName minmaxtext">Slots </label>
+
+            <input class="minmax-input darkGreyText" type="text" name="data.slots.value" value="{{data.slots.value}}"
+              data-dtype="Number" />
+            <div class="slant" style="transform: skewX(0deg);"></div>
+            <input class="minmax-input darkGreyText" type="text" name="data.constitution.max" value="1{{data.stats.constitution.value}}"
+              data-dtype="Number" />
+          </div>
+        </div>
+
+
       </div>
 
       <div class="centercol">
@@ -92,7 +111,7 @@
           <div class="verticalFlex blockborder">
             <!-- HP -->
             <div class="statblock">
-              <label for="data.stat.charisma.value" class="statName minmaxtext">{{localize "Knave2e.ActorHP"}} </label>
+              <label for="data.base.health" class="statName minmaxtext">{{localize "Knave2e.ActorHP"}} </label>
   
               <input class="minmax-input darkGreyText" type="text" name="data.health.value" value="{{data.health.value}}"
                 data-dtype="Number" />
@@ -193,9 +212,8 @@
         </div>
         
         <div class="verticalFlex">
-          <div class="statblock" style="height: 20px;">
+          <div class="statblock" style="height: 7px;">
             <div style="width:33%;"></div>
-            
           </div>
         </div>
 
@@ -454,7 +472,7 @@
              
               <!--<img src="{{item.img}}" title="{{item.name}}" class="item-card-image" style="transform:rotate({{item.data.sheet.rotation}}deg) scale({{item.data.size.aspect}});"/>-->
               <div class="item-controls item-card-chat">
-                <a class="item-control item-rotate" title="Rotate Item"><i class="fas fa-sync-alt"></i></a>
+                <!--<a class="item-control item-rotate" title="Rotate Item"><i class="fas fa-sync-alt"></i></a>-->
                 <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
                 <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
                 <!-- <i class="fas fa-comment-dots list-roll description-roll"></i> -->

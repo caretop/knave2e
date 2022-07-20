@@ -54,7 +54,8 @@
         </div>-->
         
         <div class="rollmods">
-            <div class="valuetext">{{stat.name}} ({{this.target}})</div>
+           
+            <div class="valuetext">{{data.rawRoll.value}}</div>
         </div>
         {{/unless}}
             <!-- Damage Roll -->
@@ -65,6 +66,7 @@
                     <div class="value">{{rollText}}</div>
                 </div>
             </div>
+            
             <div class="rollmods" style="margin-top: 0px;">{{weaponState}} ({{#if isSpell}}{{data.rollDiv}}{{else}}{{damageDice}}{{/if}})</div>
 
                 {{#if item.data.description}}
